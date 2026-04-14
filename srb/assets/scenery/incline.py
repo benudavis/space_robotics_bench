@@ -7,7 +7,7 @@ class Incline(Terrain):
     asset_cfg: AssetBaseCfg = AssetBaseCfg(
         prim_path="{ENV_REGEX_NS}/incline",
         spawn=CuboidCfg(
-            size=(5.0, 5.0, 0.05),  # 5m long, 5m wide, 5cm thick
+            size=(5.0, 3.0, 0.05),  # 5m long, 5m wide, 5cm thick
             collision_props=CollisionPropertiesCfg(),
             physics_material=RigidBodyMaterialCfg(
                 static_friction=1.0,

@@ -212,7 +212,7 @@ def _compute_step_return(
     ## Terminations ##
     ##################
     # Termination if robot reaches target or falls off the slope
-    termination = (dist_robot_to_target < 0.1) | (tf_pos_robot[:, 2] < -1.5)
+    termination = (dist_robot_to_target < 0.8) | (tf_pos_robot[:, 2] < -1.5)
     # Truncation
     truncation = (
         episode_length >= max_episode_length
