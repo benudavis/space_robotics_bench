@@ -30,7 +30,7 @@ class InchwormingRover(WheeledRobot):
         prim_path="{ENV_REGEX_NS}/inchworming_rover",
         spawn=UsdFileCfg(
             usd_path=SRB_ASSETS_DIR.joinpath("custom_assets")
-            .joinpath("inchworming_rover")
+            .joinpath("inchworming_rover/urdf/inchworming_rover")
             .joinpath("inchworming_rover.usd")
             .as_posix(),
             activate_contact_sensors=True,
