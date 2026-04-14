@@ -70,5 +70,16 @@ class InchwormingRover(WheeledRobot):
     actions: ActionGroup = InchwormingActionGroup()
 
     ## Frames
-    frame_base: Frame = Frame(prim_relpath="Body")
-    # TODO: Add any additional frames like mount points, cameras, etc.
+    frame_base: Frame = Frame(prim_relpath="body")
+    frame_payload_mount: Frame = Frame(
+        prim_relpath="body",
+        offset=Transform(pos=(0.0, 0.0, 0.1)),
+    )
+    frame_manipulator_mount: Frame = Frame(
+        prim_relpath="body",
+        offset=Transform(pos=(0.1, 0.0, 0.1)),
+    )
+    frame_front_camera: Frame = Frame(
+        prim_relpath="body",
+        offset=Transform(pos=(0.2, 0.0, 0.1)),
+    )
